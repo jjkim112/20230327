@@ -1,0 +1,118 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+  color: rgb(22, 22, 22);
+}
+
+.bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+main {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .clock {
+  font-family: "Share Tech Mono", monospace;
+  text-align: center;
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgb(10, 175, 230), 0 0 20px rgba(10, 175, 230, 0);
+}
+main .clock .time {
+  letter-spacing: 0.05em;
+  font-size: 80px;
+  padding: 5px 0;
+}
+main .clock .date {
+  letter-spacing: 0.1em;
+  font-size: 24px;
+}
+main .quotes {
+  position: relative;
+  font-size: 60px;
+  color: whitesmoke;
+}
+main .quotes .quotesAddBtn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+main .quotes:hover .quotesAddBtn {
+  display: inline-block;
+}
+main .newQuotes {
+  display: none;
+}
+main .search .searchLogo {
+  width: 32px;
+  height: 32px;
+  animation: spin 5s linear infinite;
+}
+main .searchResult {
+  display: none;
+}
+main .nft {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
+}
+main .nft img {
+  width: 256px;
+  height: 256px;
+}
+main .nft .nftHover {
+  position: absolute;
+  display: none;
+  width: 256px;
+  height: 256px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .nft .nftHover a {
+  color: white;
+}
+main .nft .nftHover button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -8px;
+  border-radius: 9999px;
+  width: 24px;
+  height: 24px;
+}
+main .nft:hover .nftHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .nftView {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
